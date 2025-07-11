@@ -62,13 +62,13 @@ Work only on your assigned task. Follow the Figma designs and naming conventions
 4. Push to Your Branch  
 git add .  
 git commit -m "Added Education page layout"  
-git push origin aymaan/education
+git push aymaan/education
 
 5. Create a Pull Request  
 - Go to GitHub  
 - Click "Compare & pull request"  
 - Add a descriptive title and summary  
-- Assign reviewers: @asmaaelattar and @henry-g  
+- Assign reviewers: @aymaanhussain and @purabshah12  
 - Submit the PR
 
 6. Wait for Review  
