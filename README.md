@@ -28,21 +28,6 @@ npm run dev
 
 The app will be live at http://localhost:5173
 
-## Project Structure
-
-src/
-├── App.jsx               Main app with routes
-├── main.jsx              Entry point
-├── index.css             Tailwind CSS
-├── components/           Shared components (e.g., Navbar)
-├── pages/                Each page of the site (Home, Officers, etc.)
-│   ├── Home.jsx
-│   ├── Officers.jsx
-│   ├── Projects.jsx
-│   ├── Education.jsx
-│   ├── Calendar.jsx
-│   └── About.jsx
-
 ## Creating Your Page (For Assigned Task)
 
 Each developer is assigned a page (for example: Officers, Calendar, etc.).
