@@ -1,3 +1,5 @@
+import Monthdiv from "../calendar-library/MonthView";
+
 export default function Calendar() {
   return (
     <div className="space-y-4">
@@ -13,6 +15,10 @@ export default function Calendar() {
         <h2 className="text-xl font-semibold text-gray-700">Past Highlights</h2>
         <p className="text-gray-500">See what we've done this semester and who we’ve worked with.</p>
       </section>
+
+      <Monthdiv/>
+
+
     </div>
   );
 }
