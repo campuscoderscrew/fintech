@@ -7,6 +7,7 @@ import Projects from './pages/Projects';
 import Education from './pages/Education';
 import Calendar from './pages/Calendar';
 import About from './pages/About';
+import './App.css'; 
 
 function App() {
   return (
