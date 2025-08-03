@@ -1,7 +1,5 @@
 import localData from "./LocalData";
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
-const serverAddress = "http://localhost:3000";
 import { formatDate } from "../util/utils";
 import "../styles/Day.css"
 import { useEffect, useState } from "react";
@@ -55,24 +53,6 @@ export default function Day({dayInTheWeek, weekDayNumbers, daysWithinMonth}) {
             currentDate.setMonth(currentDate.getMonth() + modifier, date)
             console.log("Selected date: " + currentDate)
             localData.dayEventsNumber = dayEventsNumber;
-
-            try {
-                const formattedDate = formatDate(currentDate);
-                // Check if entry exists
-                const response = await axios.post(`${serverAddress}/api/exists`, {date: formattedDate});
-
-                if (response.data.exists) {
-                    // If entry exists, go directly to generated output
-                    navigate('/generated-output');
-                } else {
-                    // If no entry exists, go to journal entry creation page
-                    navigate('/journal');
-                }
-            } catch (error) {
-                console.error("Error checking journal entry:", error);
-                // If error occurs, default to journal entry screen
-                navigate('/journal');
-            }
         }
 
     function detDayDate() {
@@ -94,9 +74,15 @@ export default function Day({dayInTheWeek, weekDayNumbers, daysWithinMonth}) {
         >
             <div
                 className="dayTop"
-                style={{ backgroundColor: isWithinMonth ? "#ACA895" : "#DFDBC7" }}
+                style={{ backgroundColor: isWithinMonth ? "#2d336b" : "white" }}
             >
                 <div className="topText">{detDayDate()}</div>
+            </div>
+            <div
+                className="dayBottom"
+                style={{ backgroundColor: isWithinMonth ? "#2d336b" : "white" }}
+            >
+                <div className="topText">Foo</div>
             </div>
         </div>
     )

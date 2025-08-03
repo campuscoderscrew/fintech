@@ -1,9 +1,7 @@
-import axios from 'axios'
 import Log from './Log'
 
 // The model of events happening-- replace this with API requests
 
-const serverAddress = "http://localhost:3000"
 let eventsModel = new Map();
 
 // The object holding local data on the front end (to manage state across components)
@@ -137,25 +135,6 @@ const localData = {
     getDayEvents: function() {
         const currentDate = localData.currentDate;
         return eventsModel.get(currentDate.getFullYear() + "").get(currentDate.getMonth() + 1 + "").get(currentDate.getDate() + "");
-    },
-    initializeModel: function() {
-        console.log("serverAddress: " + serverAddress);
-        console.log("Initializing model");
-    
-        axios.get(`${serverAddress}/events/model-information`, {})
-            .then(res => {
-                console.log("Got a response")
-                //console.log("res:" + res.data.sendModel)
-                let map = JSON.parse(res.data.sendModel);
-                
-                eventsModel = localData.arrayToMap(map);
-                console.log(eventsModel);
-            })
-            .catch(error => {
-                console.log("Got an error.")
-                console.log("Response: ");
-                console.error("initializeModel Error:", error);
-        });
     }
 };
 

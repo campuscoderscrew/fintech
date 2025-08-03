@@ -14,14 +14,14 @@ export default function WeekDays() {
     }
 
 
-    let dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    let dayNames = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
 
 
     function RenderDay({day}) {
         return (
             <>
                 <LocalDay label={day}/>
-                {day === "Sat" ? <></> : <div className="gap"/>}
+                {day === "SAT" ? <></> : <div className="gap"/>}
             </>
         )
     }
