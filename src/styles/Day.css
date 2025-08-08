@@ -1,0 +1,43 @@
+.dayContainer {
+  flex: 30;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.dayTop {
+  flex: 20;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+.dayTop:hover {
+  cursor: pointer;
+}
+
+.dayBottom {
+  height: 90px;
+}
+
+.topText {
+  color: black;
+  font-family: "IBMPlexMono";
+  font-size: 20;
+  text-align: right;
+  color: white;
+}
+.bottomText {
+  color: #000000;
+  font-family: "Itim-Regular";
+  text-align: center;
+  font-size: 20;
+}
+.columnGap {
+  flex: 4;
+  background-color: white;
+}
+
+.currentDayOutline {
+  outline: 2.5px solid #4c4a3f;
+}

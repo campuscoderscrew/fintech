@@ -1,0 +1,30 @@
+.dayContainer {
+  font-family: "IBMPlexMono";
+}
+
+.text {
+  font-family: "IBMPlexMono";
+  font-size: 15;
+  text-align: "center";
+  background-color: #2d336b;
+  height: 30px;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  flex-direction: "row";
+  flex: 20;
+  background-color: #2d336b;
+}
+
+.gap {
+  flex: 4;
+  background-color: white;
+}
+
+.foo-container {
+  display: flex;
+  flex-direction: row;
+  flex: 20;
+}
