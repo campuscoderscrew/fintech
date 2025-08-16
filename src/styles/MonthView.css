@@ -6,13 +6,18 @@
   height: 100%;
 }
 
-.calendardiv {
+.calendardiv,
+.month-title-container,
+.calendar-title {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   flex: 37;
   width: 80%;
   margin-left: 10%;
+}
+
+.month-title {
 }
 
 .sideGap {

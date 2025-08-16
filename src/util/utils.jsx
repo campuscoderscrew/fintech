@@ -1,6 +1,6 @@
 export function convertMonthIndex(monthIndex) {
     // Add error handling for bounds
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const months = ["JANURAY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
     return months[monthIndex];
 }
 
